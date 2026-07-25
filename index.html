@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Buscador</title>
+    <title>Buscador de Válvulas - Cadillac ATS</title>
 
     <!-- Bootstrap 5 -->
     <link
@@ -44,7 +44,7 @@
                 <i class="bi bi-tools fs-1 text-primary"></i>
               </div>
               <div>
-                <h1 class="h3 fw-bold mb-0">Buscador</h1>
+                <h1 class="h3 fw-bold mb-0">Buscador de Válvulas</h1>
                 <span
                   class="badge bg-primary bg-opacity-10 text-primary fw-normal mt-1"
                   id="modeloBadge"
@@ -65,7 +65,7 @@
                 type="text"
                 id="buscador"
                 class="form-control border-start-0 ps-0"
-                placeholder="Buscar..."
+                placeholder="Buscar válvula, menú o submenú..."
                 autofocus
                 autocomplete="off"
               />
@@ -77,6 +77,12 @@
               >
                 <i class="bi bi-x-lg"></i>
               </button>
+            </div>
+            <div class="mt-2">
+              <small class="text-muted" id="searchHint">
+                <i class="bi bi-lightbulb me-1"></i> Escribe al menos 2
+                caracteres para buscar
+              </small>
             </div>
           </div>
 
@@ -99,6 +105,20 @@
 
           <!-- Footer -->
           <hr class="my-3" />
+          <div
+            class="d-flex flex-wrap justify-content-between align-items-center text-muted small"
+          >
+            <span
+              ><i class="bi bi-database me-1"></i>
+              <span id="footerModelo">Cadillac ATS 2015</span></span
+            >
+            <span
+              ><i class="bi bi-clock me-1"></i> Búsqueda en tiempo real</span
+            >
+            <span
+              ><i class="bi bi-calendar me-1"></i> <span id="fechaActual"></span
+            ></span>
+          </div>
         </div>
       </div>
     </div>
