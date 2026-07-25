@@ -1,0 +1,51 @@
+{
+  "modelo": "Cadillac ATS 2015",
+  "menus": [
+    {
+      "nombre": "Escáner Rápido",
+      "submenus": []
+    },
+    {
+      "nombre": "Módulos de Control",
+      "submenus": [
+        {
+          "nombre": "1. Módulo de Control de Motor",
+          "posicion": 1,
+          "submenus": [
+            {
+              "nombre": "1. Códigos de Avería",
+              "posicion": 1,
+              "submenus": [
+                {
+                  "nombre": "1. Pantalla DTC",
+                  "posicion": 1
+                },
+                {
+                  "nombre": "2. Estado de la Prueba Diagnóstica: Este Ciclo de Encendido",
+                  "posicion": 2
+                },
+                {
+                  "nombre": "3. Estado de la Prueba Diagnóstica: Desde el Borrado de DTC",
+                  "posicion": 3
+                },
+                {
+                  "nombre": "4. Registro de Fallos/Congelación de Imagen",
+                  "posicion": 4
+                }
+              ]
+            },
+            {
+              "nombre": "2. Información de Identificación",
+              "posicion": 2
+            }
+          ]
+        },
+        {
+          "nombre": "2. Módulo de Control de Transmisión",
+          "posicion": 2,
+          "submenus": []
+        }
+      ]
+    }
+  ]
+}
