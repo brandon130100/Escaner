@@ -3,7 +3,7 @@ const buscador = document.getElementById("buscador");
 const resultadosDiv = document.getElementById("resultados");
 const estadisticasDiv = document.getElementById("estadisticas");
 const estadisticasTexto = document.getElementById("estadisticasTexto");
-const searchHint = document.getElementById("searchHint");
+// const searchHint = document.getElementById("searchHint");
 const limpiarBtn = document.getElementById("limpiarBtn");
 const modeloBadge = document.getElementById("modeloBadge");
 // const footerModelo = document.getElementById('footerModelo');
@@ -206,7 +206,7 @@ function mostrarEstadoVacio() {
       buscador.value = query;
       limpiarBtn.style.display = "block";
       realizarBusqueda(query);
-      searchHint.innerHTML = `<i class="bi bi-search me-1"></i> Buscando: "${query}"`;
+      //   searchHint.innerHTML = `<i class="bi bi-search me-1"></i> Buscando: "${query}"`;
     });
   });
 }
@@ -219,16 +219,16 @@ buscador.addEventListener("input", function () {
   limpiarBtn.style.display = query.length > 0 ? "block" : "none";
 
   if (query.length === 0) {
-    searchHint.innerHTML =
-      '<i class="bi bi-lightbulb me-1"></i> Escribe al menos 2 caracteres para buscar';
+    // searchHint.innerHTML =
+    //   '<i class="bi bi-lightbulb me-1"></i> Escribe al menos 2 caracteres para buscar';
     mostrarEstadoVacio();
     estadisticasDiv.style.display = "none";
     return;
   }
 
   if (query.length < 2) {
-    searchHint.innerHTML =
-      '<i class="bi bi-keyboard me-1"></i> Escribe al menos 2 caracteres...';
+    // searchHint.innerHTML =
+    //   '<i class="bi bi-keyboard me-1"></i> Escribe al menos 2 caracteres...';
     resultadosDiv.innerHTML = `
             <div class="text-center py-5">
                 <div class="display-1 mb-3">⌨️</div>
@@ -240,7 +240,7 @@ buscador.addEventListener("input", function () {
     return;
   }
 
-  searchHint.innerHTML = `<i class="bi bi-search me-1"></i> Buscando: "${query}"`;
+  //   searchHint.innerHTML = `<i class="bi bi-search me-1"></i> Buscando: "${query}"`;
 
   clearTimeout(timeout);
   timeout = setTimeout(() => {
@@ -251,8 +251,8 @@ buscador.addEventListener("input", function () {
 limpiarBtn.addEventListener("click", function () {
   buscador.value = "";
   this.style.display = "none";
-  searchHint.innerHTML =
-    '<i class="bi bi-lightbulb me-1"></i> Escribe al menos 2 caracteres para buscar';
+  //   searchHint.innerHTML =
+  //     '<i class="bi bi-lightbulb me-1"></i> Escribe al menos 2 caracteres para buscar';
   mostrarEstadoVacio();
   estadisticasDiv.style.display = "none";
   buscador.focus();
@@ -264,21 +264,21 @@ buscador.addEventListener("keydown", function (e) {
   }
 });
 
-// ===== FECHA ACTUAL =====
-function actualizarFecha() {
-  const ahora = new Date();
-  const opciones = { year: "numeric", month: "long", day: "numeric" };
-  document.getElementById("fechaActual").textContent = ahora.toLocaleDateString(
-    "es-ES",
-    opciones,
-  );
-}
+// // ===== FECHA ACTUAL =====
+// function actualizarFecha() {
+//   const ahora = new Date();
+//   const opciones = { year: "numeric", month: "long", day: "numeric" };
+// //   document.getElementById("fechaActual").textContent = ahora.toLocaleDateString(
+// //     "es-ES",
+// //     opciones,
+// //   );
+// }
 
 // ===== INICIALIZAR =====
 async function iniciar() {
   await cargarDatos();
   mostrarEstadoVacio();
-  actualizarFecha();
+  //   actualizarFecha();
 
   if (window.innerWidth > 768) {
     setTimeout(() => buscador.focus(), 500);
