@@ -13,30 +13,231 @@
           "posicion": 1,
           "submenus": [
             {
-              "nombre": "1. Códigos de Avería",
+              "nombre": "1. Códigos de Avería (DTC)",
               "posicion": 1,
               "submenus": [
                 {
-                  "nombre": "1. Pantalla DTC",
+                  "nombre": "Pantalla DTC",
                   "posicion": 1
                 },
                 {
-                  "nombre": "2. Estado de la Prueba Diagnóstica: Este Ciclo de Encendido",
+                  "nombre": "Estado de la prueba diagnóstica: este ciclo de encendido",
                   "posicion": 2
                 },
                 {
-                  "nombre": "3. Estado de la Prueba Diagnóstica: Desde el Borrado de DTC",
+                  "nombre": "Estado de la prueba diagnóstica: desde el borrado de DTC",
                   "posicion": 3
                 },
                 {
-                  "nombre": "4. Registro de Fallos/Congelación de Imagen",
+                  "nombre": "Registros de fallos / congelación de imagen",
                   "posicion": 4
                 }
               ]
             },
             {
               "nombre": "2. Información de Identificación",
-              "posicion": 2
+              "posicion": 2,
+              "submenus": [
+                {
+                  "nombre": "Información de identificación",
+                  "posicion": 1
+                },
+                {
+                  "nombre": "Historial de calibración",
+                  "posicion": 2
+                }
+              ]
+            },
+            {
+              "nombre": "3. Visualización de datos",
+              "posicion": 3,
+              "submenus": [
+                {
+                  "nombre": "Datos del motor",
+                  "posicion": 1
+                },
+                {
+                  "nombre": "Datos de la transmisión automática",
+                  "posicion": 2
+                },
+                {
+                  "nombre": "Datos del actuador CMP",
+                  "posicion": 3
+                },
+                {
+                  "nombre": "Datos del CVAA y refrigeración del motor",
+                  "posicion": 4
+                },
+                {
+                  "nombre": "Datos de control de la velocidad, PTO y control de tracción",
+                  "posicion": 5
+                },
+                {
+                  "nombre": "Datos eléctricos y del inmovilizador",
+                  "posicion": 6
+                },
+                {
+                  "nombre": "Datos del EVAP",
+                  "posicion": 7
+                },
+                {
+                  "nombre": "Datos del tratamiento posterior de los gases de escape",
+                  "posicion": 8
+                },
+                {
+                  "nombre": "Datos del sistema de combustible",
+                  "posicion": 9
+                },
+                {
+                  "nombre": "Datos del ajuste del combustible",
+                  "posicion": 10
+                },
+                {
+                  "nombre": "Datos del HO2S",
+                  "posicion": 11
+                },
+                {
+                  "nombre": "Datos del encendido",
+                  "posicion": 12
+                },
+                {
+                  "nombre": "Datos de inducción",
+                  "posicion": 13
+                },
+                {
+                  "nombre": "Datos del cuadro de instrumentos",
+                  "posicion": 14
+                },
+                {
+                  "nombre": "Datos de transmisión manual",
+                  "posicion": 15
+                },
+                {
+                  "nombre": "Datos del fallo de encendido",
+                  "posicion": 16
+                },
+                {
+                  "nombre": "Datos TAC",
+                  "posicion": 17
+                }
+              ]
+            },
+            {
+              "nombre": "4. Funciones de Control",
+              "posicion": 4,
+              "submenus": [
+                {
+                  "nombre": "Relé del embrague del compresor A/A",
+                  "posicion": 1
+                },
+                {
+                  "nombre": "Sistema del actuador de posición del árbol de levas",
+                  "posicion": 2
+                },
+                {
+                  "nombre": "Prueba de compresión",
+                  "posicion": 3
+                },
+                {
+                  "nombre": "Ventilador de refrigeración",
+                  "posicion": 4
+                },
+                {
+                  "nombre": "Relé de encendido de los mandos del motor",
+                  "posicion": 5
+                },
+                {
+                  "nombre": "Válvula solenoide de regulación de presión del aceite del motor",
+                  "posicion": 6
+                },
+                {
+                  "nombre": "Régimen/regulador del motor",
+                  "posicion": 7
+                },
+                {
+                  "nombre": "Sistema EVAP",
+                  "posicion": 8
+                },
+                {
+                  "nombre": "Estado del bucle de control de combustible",
+                  "posicion": 9
+                },
+                {
+                  "nombre": "Sistema de combustible",
+                  "posicion": 10
+                },
+                {
+                  "nombre": "Terminal L del alternador",
+                  "posicion": 11
+                },
+                {
+                  "nombre": "Indicadores del panel de instrumentos",
+                  "posicion": 12
+                },
+                {
+                  "nombre": "Gráfico de fallo de encendido",
+                  "posicion": 13
+                },
+                {
+                  "nombre": "Calefactores de la sonda Lambda",
+                  "posicion": 14
+                },
+                {
+                  "nombre": "Relé del motor de arranque",
+                  "posicion": 15
+                },
+                {
+                  "nombre": "Turbocompresor",
+                  "posicion": 16
+                }
+              ]
+            },
+            {
+              "nombre": "5. Funciones de Configuración/Reinicio",
+              "posicion": 5,
+              "submenus": [
+                {
+                  "nombre": "Programar funciones",
+                  "posicion": 1,
+                  "submenus": [
+                    {
+                      "nombre": "Programar la posición del pedal de embrague",
+                      "posicion": 1
+                    },
+                    {
+                      "nombre": "Programar la variación de posición del cigüeñal",
+                      "posicion": 2
+                    },
+                    {
+                      "nombre": "Programar el calefactor HO2S",
+                      "posicion": 3
+                    },
+                    {
+                      "nombre": "Programar ralentí",
+                      "posicion": 4
+                    },
+                    {
+                      "nombre": "Ajuste del ralentí",
+                      "posicion": 5
+                    }
+                  ]
+                },
+                {
+                  "nombre": "Restablecer funciones",
+                  "posicion": 2,
+                  "submenus": []
+                }
+              ]
+            },
+            {
+              "nombre": "6. Información sobre el sistema de inspección / mantenimiento",
+              "posicion": 6,
+              "submenus": []
+            },
+            {
+              "nombre": "7. Información del evento",
+              "posicion": 7,
+              "submenus": []
             }
           ]
         },
